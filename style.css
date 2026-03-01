@@ -1,0 +1,258 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* =========================
+   HEADER
+========================= */
+.main-header {
+  background: #4B0082; /* Thick purple */
+  color: white;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.user-info span {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+.navbar {
+  background: #6A0DAD; /* Purple */
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 25px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #dda0dd; /* Light purple hover */
+}
+
+/* =========================
+   HERO SECTION (INDEX)
+========================= */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #6A0DAD, #9b30ff); /* Purple gradient */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.primary {
+  background: white;
+  color: #6A0DAD;
+}
+
+.primary:hover {
+  background: #f1f1f1;
+}
+
+.secondary {
+  background: #4B0082;
+  color: white;
+}
+
+.secondary:hover {
+  background: #3a0066;
+}
+
+/* =========================
+   AUTH PAGES (LOGIN & REGISTER)
+========================= */
+.auth-container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4B0082, #6A0DAD);
+}
+
+.auth-box {
+  background: white;
+  width: 400px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #6A0DAD;
+  outline: none;
+  box-shadow: 0 0 8px rgba(106,13,173,0.3);
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #6A0DAD;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #4B0082;
+}
+
+/* =========================
+   CATALOG
+========================= */
+.catalog {
+  padding: 60px 80px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.book-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h3 {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CART
+========================= */
+.cart-section {
+  padding: 60px 80px;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+  background: #4B0082;
+  color: white;
+}
+
+.total {
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #4B0082;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4B0082;
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
+}
